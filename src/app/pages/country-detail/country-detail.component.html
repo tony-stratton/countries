@@ -1,0 +1,12 @@
+<div class="top-nav"><span class="link" (click)="location.back()">Back</span></div>
+<div class="card">
+    <div class="flag">
+        <img src="{{flag}}" />
+    </div>
+    <div class="details">
+        <h2>{{country.Name}}</h2>
+        <div *ngFor="let detail of objectKeys(country)" class="detail">
+            <span class="label">{{detail}}:</span> <span>{{country[detail]}}</span>
+        </div>
+    </div>
+</div>
